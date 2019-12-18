@@ -37,6 +37,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
    //#define RGBLIGHT_EFFECT_ALTERNATING
 #endif
 
+#define RGBLED_NUM 32
+
 #if defined(LED_LAYOUTs)
 #define LED_LAYOUT( \
     L00, L01, L02, L03, L04, L05, \

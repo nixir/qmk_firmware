@@ -14,6 +14,7 @@
 
 #ifdef RGBLIGHT_ENABLE
 //Following line allows macro to read current RGB settings
+#include "rgblight.h"
 extern rgblight_config_t rgblight_config;
 #endif
 
@@ -459,6 +460,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       #endif
       break;
   }
+
+  for (uint8_t c = 0; c < MATRIX_COLS; c++) {
+   for (uint8_t r = 0; r < MATRIX_ROWS; r++) {
+     if (matrix_is_on(r, c)) {
+       //rとcがそれぞれ押されたキーの縦、横の場所
+//	sethsv(HSV_GREEN, (LED_TYPE *)&led[(uint8_t)keycode]);
+//	rgblight_set();
+     }else{
+//	sethsv(HSV_BLUE, (LED_TYPE *)&led[(uint8_t)keycode]);
+//	rgblight_set();
+	}
+   }
+ }
+
   return true;
 }
 
@@ -629,3 +644,5 @@ void iota_gfx_task_user(void) {
 }
 
 #endif
+
+
