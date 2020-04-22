@@ -17,7 +17,7 @@ LED_BACK_ENABLE = yes        # LED backlight (Enable WS2812 RGB underlight.)
 # LED_UNDERGLOW_ENABLE = no   # LED underglow (Enable WS2812 RGB underlight.)
 LED_ANIMATIONS = yes        # LED animations
 # IOS_DEVICE_ENABLE = no      # connect to IOS device (iPad,iPhone)
-
+EXTRAKEY_ENABLE = yes       # Audio control and System control(+450)
 # convert Helix-specific options (that represent combinations of standard options)
 #   into QMK standard options.
 include $(strip $(KEYBOARD_LOCAL_FEATURES_MK))
